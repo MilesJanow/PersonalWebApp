@@ -1,20 +1,74 @@
 body
 {
-    background-image: url(images/sour-face.jpg);
-    background-repeat: no-repeat;
+    margin:1%;
+    padding:1%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: forestgreen;
 }
-.flex-container1
+.container1 div
 {
-    display: block;
+    border-radius: 10px;
 }
-.flex-container2
+.leftbox
 {
+    background-color: whitesmoke;
+    float:left;
+    width:49%;
+    height:600px;
+}
+.leftbox p
+{
+    padding-left:2.5%;
+    padding-right:2.5%;
+}
+.rightbox
+{
+    float:right;
+    width:49%;
+    height:600px;
+}
+.topbox
+{
+    height:450px;
+    background-color: whitesmoke;
+}
+.bottombox
+{
+    padding:0px;
+    margin-top:20px;
+    height:130px;
+    background-color: whitesmoke;
+}
+.bottombox div
+{
+    position: relative;
+    left:5%;
+    top:20%;
+    font-size:20px;
+}
+/* top-nav START */
+.top-nav
+{
+    margin-bottom:1%;
+    background-color: whitesmoke;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
 }
-.flex-item
+.top-nav a, .clickable
 {
+    text-decoration:none;
+    color:inherit;
+    font-size:15px;
+    border-radius:5px;
+    background-color: olive;
     margin: 10px;
     padding: 10px;
-    border: 1px solid black;
+    border: 0px solid black;
 }
+.top-nav a:hover, .clickable:hover
+{
+    background-color: olivedrab;
+    cursor: pointer;
+}
+/* top-nav END *
